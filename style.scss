@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+$color: #eb5165;
+$spacer: 1rem;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(69, 51, 14);
+  background: radial-gradient(
+    circle,
+    rgba(69, 51, 14, 1) 11%,
+    rgba(66, 48, 12, 1) 33%,
+    rgba(91, 63, 28, 1) 60%,
+    rgba(82, 58, 35, 1) 81%,
+    rgba(142, 103, 69, 1) 100%
+  );
+  text-transform: uppercase;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+.game {
+  width: 99vw;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(224, 224, 224, 1) 50%,
+    rgba(239, 239, 239, 1) 50%,
+    rgba(219, 219, 219, 1) 50%,
+    rgba(242, 242, 242, 1) 50%,
+    rgba(232, 232, 232, 1) 50%,
+    rgba(226, 226, 226, 1) 50%,
+    rgba(236, 236, 236, 1) 50%,
+    rgba(218, 218, 218, 1) 100%,
+    rgba(216, 216, 216, 1) 100%
+  );
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bi {
+  color: $color;
+}
+
+.bi-plus-circle,
+.bi-box-arrow-in-down,
+.bi-arrow-repeat {
+  font-size: 25px;
+}
+
+.bi-dice-1,
+.bi-dice-2,
+.bi-dice-3,
+.bi-dice-4,
+.bi-dice-5,
+.bi-dice-6 {
+  font-size: 70px;
+}
+
+h5 {
+  font-weight: 300;
+  cursor: pointer;
+  padding-left: ($spacer * 0.5);
+  padding-top: ($spacer * 0.25);
+}
+
+h2 {
+  letter-spacing: 2.5px;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.game-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.points {
+  font-size: 4em;
+  font-weight: 200;
+  color: $color;
+  margin-bottom: 80px;
+}
+
+.player_indicator {
+  position: relative;
+  bottom: 0.3em;
+  padding-left: 10px;
+  font-weight: 900;
+  color: $color;
+}
+
+.score_holder {
+  background-color: $color;
+  max-width: fit-content;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .game-options {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+  }
+
+  .game {
+    height: 90vh;
+    overflow: scroll;
+  }
+}

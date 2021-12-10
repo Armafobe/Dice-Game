@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #45330e;
+  background: radial-gradient(circle, #45330e 11%, #42300c 33%, #5b3f1c 60%, #523a23 81%, #8e6745 100%);
+  text-transform: uppercase;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+.game {
+  width: 99vw;
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(50%, #e0e0e0), color-stop(50%, #efefef), color-stop(50%, #dbdbdb), color-stop(50%, #f2f2f2), color-stop(50%, #e8e8e8), color-stop(50%, #e2e2e2), color-stop(50%, #ececec), color-stop(100%, #dadada), to(#d8d8d8));
+  background: linear-gradient(90deg, white 0%, #e0e0e0 50%, #efefef 50%, #dbdbdb 50%, #f2f2f2 50%, #e8e8e8 50%, #e2e2e2 50%, #ececec 50%, #dadada 100%, #d8d8d8 100%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bi {
+  color: #eb5165;
+}
+
+.bi-plus-circle,
+.bi-box-arrow-in-down,
+.bi-arrow-repeat {
+  font-size: 25px;
+}
+
+.bi-dice-1,
+.bi-dice-2,
+.bi-dice-3,
+.bi-dice-4,
+.bi-dice-5,
+.bi-dice-6 {
+  font-size: 70px;
+}
+
+h5 {
+  font-weight: 300;
+  cursor: pointer;
+  padding-left: 0.5rem;
+  padding-top: 0.25rem;
+}
+
+h2 {
+  letter-spacing: 2.5px;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.game-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.points {
+  font-size: 4em;
+  font-weight: 200;
+  color: #eb5165;
+  margin-bottom: 80px;
+}
+
+.player_indicator {
+  position: relative;
+  bottom: 0.3em;
+  padding-left: 10px;
+  font-weight: 900;
+  color: #eb5165;
+}
+
+.score_holder {
+  background-color: #eb5165;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  .game-options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 60px;
+  }
+  .game {
+    height: 90vh;
+    overflow: scroll;
+  }
+}
+/*# sourceMappingURL=style.css.map */
